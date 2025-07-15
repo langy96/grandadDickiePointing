@@ -1,0 +1,3 @@
+PLAN
+
+This is going to be a website for my dad's pointing business. I want people to be able to book appointments via a booking calendar.
