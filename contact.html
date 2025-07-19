@@ -4,64 +4,71 @@
     <meta charset="UTF-8">
     <title>Contact - Book a Free Quote</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/styles.css">
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="testimonials.html">Testimonials</a>
-    </nav>
-</header>
-<section>
-    <h3>Book a Free Quote Now!</h3>
-    <p>Let us know when is best for you (serving the Charente region):</p>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Contact Details</legend>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+    <header>
+        <h1>Grandad Dickie's Pointing</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Book a Free Quote Now!</h2>
+        <h3>Let us know when is best for you:</h3>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="location">Your Location (town/village):</label>
-            <input type="text" id="location" name="location" required>
-        </fieldset>
+                <label for="location">Your Location (town/village):</label>
+                <input type="text" id="location" name="location" required>
+            </fieldset>
 
-        <fieldset>
-            <legend>Appointment Details</legend>
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time">
-        </fieldset>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time">
+            </fieldset>
 
-        <fieldset>
-            <legend>Service Type</legend>
-            <label for="service">Type of Pointing Needed:</label>
-            <select id="service" name="service" required>
-                <option value="">--Please choose an option--</option>
-                <option value="brick">Brick pointing</option>
-                <option value="stone">Stone pointing</option>
-                <option value="repointing">Repointing</option>
-                <option value="repairs">Pointing repairs</option>
-                <option value="other">Other (please specify below)</option>
-            </select>
-            
-            <div id="other-service" style="display:none;">
-                <label for="otherDetails">Please describe your needs:</label>
-                <input type="text" id="otherDetails" name="otherDetails" placeholder="Describe your requirements">
-            </div>
-            <script>
-                document.getElementById('service').addEventListener('change', function() {
-                    document.getElementById('other-service').style.display = this.value === 'other' ? 'block' : 'none';
-                });
-            </script>
-        </fieldset>
+            <fieldset>
+                <legend>Service Type</legend>
+                <label for="service">Type of Pointing Needed:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="brick">Brick pointing</option>
+                    <option value="stone">Stone pointing</option>
+                    <option value="repointing">Repointing</option>
+                    <option value="repairs">Pointing repairs</option>
+                    <option value="other">Other (please specify below)</option>
+                </select>
+                <div id="other-service" style="display:none;">
+                    <label for="otherDetails">Please describe your needs:</label>
+                    <input type="text" id="otherDetails" name="otherDetails" placeholder="Describe your requirements">
+                </div>
+            </fieldset>
 
-        <button type="submit">Request Quote</button>
-    </form>
-</section>
+            <button type="submit">Request Quote</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById('service').addEventListener('change', function() {
+            document.getElementById('other-service').style.display = this.value === 'other' ? 'block' : 'none';
+        });
+    </script>
+    <footer>
+        <p>© 2024 Grandad Dickie's Pointing. All rights reserved.</p>
+        <p>
+            Serving Charente and surrounding areas.
+        </p>
+    </footer>
 </body>
 </html>
