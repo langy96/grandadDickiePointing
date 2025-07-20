@@ -85,6 +85,7 @@ a {
     color: #b48a3c;
     text-decoration: none;
     transition: color 0.2s;
+    font-size: 1.1rem;
 }
 
 a:hover {
@@ -214,6 +215,10 @@ fieldset legend {
 
 #portfolio {
     margin-bottom: 50px;
+}
+
+#return {
+    font-size: 1.4rem;
 }
 
 /* Responsive Design */
