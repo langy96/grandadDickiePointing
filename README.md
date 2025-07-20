@@ -1,7 +1,9 @@
-README
+# My Codecademy Project
 
-This is a page that I have created for my dad's pointing business. It has a Home page, a Testimonials page, and a Contact page.
+This is a responsive, interactive website I have created for my dad's pointing business.
 
-On the Contact page, people are able to select and request an appointment date/time for a free valuation.
+## Features
 
-Thank you for reading :)
+* Home Page
+* Testimonials & Portfolio Page
+* Booking Page with a booking calendar
